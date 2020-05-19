@@ -109,7 +109,7 @@ export default class App extends Component {
       return <Loading visible />;
     } else {
       r = (
-        <Router getUserConfirmation={this.showConfirm}>
+        <Router basename="/yapi" getUserConfirmation={this.showConfirm}>
           <div className="g-main">
             <div className="router-main">
               {this.props.curUserRole === 'admin' && <Notify />}
